@@ -1,0 +1,67 @@
+COMANDOS
+----------
+
+npm list webpack => Para saber la version de la libreria
+
+npm i --save-dev webpack@3.8.1  => para instalar una version especifica
+
+
+
+CARPETAS
+-----------
+
+1) webpack_external  =>  para tener un webpack por modulo o carpeta
+2) webpack_loader  => para poder reconocer archivos css en mi codigo js
+      *css-loader : entiende archivo css
+      *style-loader : imprimi mi css en mi codigo
+
+3) webpack_plugin  => aqui usamos un plugin para poder llamar a mi archivo css desde un archivo externo
+    *extract-text-webpack-plugin    
+
+4) webpack_multiple_points  => sirve para configurar multiples puntos de entrada
+
+5)  webpack_server_watch  => Servidor de desarrollo para hacer watch de mi archivos
+                      y recargar automaticamente el navegador instalamos la sgt dependencia:
+
+        *webpack-dev-server
+
+        ojo si quiero usar esta configuracion y que mi navegador se recargue automaticamente
+        "build:dev": "webpack --config ./webpack_server_watch/webpack.config.js --watch"
+        tengo que dejar esta configuracion:
+
+        rules:[
+           {
+               test:/\.css$/,
+               use:['style-loader','css-loader']
+           } 
+        ]
+
+
+ 6) webpack_babel  => Sirve para dar soporte a ecmascript, dependencias a instalar:
+       *babel-loader
+       *babel-core
+       *babel-preset-es2015
+
+
+ 7) webpack_imagenes => Soporte para imagenes, dependencias a instalar:                          
+               *url-loader
+
+
+8) webpack_fuentes  => Soporte a fuentes, dependencias a instalar:
+               *url-loader
+
+
+9) webpack_videos  => Soporte para videos, dependencias a instalar:
+           *url-loader (convierte mis archivo en base64)
+           *file-loader (Para exportar archivos de videos y ponerlos en una carpeta)
+
+                         
+10) webpack_json  => Soporte para json, dependencias a instalar:
+          *json-loader
+
+
+11) webpack_react  => Soporte para react, dependencias a instalar:
+         *babel-preset-react          
+
+
+

@@ -1,0 +1,41 @@
+{
+  "name": "WEBPACK",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack index.js bundle.js",
+    "build:local": "webpack ",
+    "build:external": "webpack --config ./webpack_external/webpack.config.js",
+    "build:loader": "webpack --config ./webpack_loader/webpack.config.js",
+    "build:plugin": "webpack --config ./webpack_plugin/webpack.config.js",
+    "build:multiple": "webpack --config ./webpack_multiple_points/webpack.config.js",
+    "build:dev": "webpack --config ./webpack_server_watch/webpack.config.js --watch",
+    "build:babel": "webpack --config ./webpack_babel/webpack.config.js",
+    "build:images": "webpack --config ./webpack_imagenes/webpack.config.js",
+    "build:fuentes": "webpack --config ./webpack_fuentes/webpack.config.js",
+    "build:videos": "webpack --config ./webpack_videos/webpack.config.js",
+    "build:json": "webpack --config ./webpack_json/webpack.config.js",
+    "build:react": "webpack --config ./webpack_react/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "json-loader": "^0.5.7",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

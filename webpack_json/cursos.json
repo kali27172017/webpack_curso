@@ -1,0 +1,12 @@
+{
+    "cursos":[
+        {
+            "name":"php",
+            "profesor": "jorge reyes"
+        },
+        {
+            "name":"java",
+            "profesor": "anai perez"
+        }
+    ]
+}
