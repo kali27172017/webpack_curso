@@ -75,7 +75,7 @@
 
 __webpack_require__(0)
 
-console.log('HOLA MUNDO DESDE JORGE')
+console.log('HOLA MUNDO DESDE JORGE REYES')
 
 /***/ })
 /******/ ]);

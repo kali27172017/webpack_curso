@@ -1,3 +1,3 @@
 require('../css/estilos.css')
 
-console.log('HOLA MUNDO DESDE JORGE')
+console.log('HOLA JORGE')
